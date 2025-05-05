@@ -182,6 +182,3 @@ All data is stored in your browser's localStorage. This means:
 
 - `shared/schema.ts`: Defines the data structures for patients, allergies, and saved queries using Drizzle ORM and Zod validation.
 
-## License
-
-[Add appropriate license information here]
