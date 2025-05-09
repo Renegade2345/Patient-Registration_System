@@ -185,3 +185,28 @@ All data is stored in your browser's localStorage. This means:
 
 - `shared/schema.ts`: Defines the data structures for patients, allergies, and saved queries using Drizzle ORM and Zod validation.
 
+
+
+
+
+####Challenges faced
+1. Experimental Technology and Limited Documentation
+
+PgLite, being an experimental PostgreSQL engine lacks mature documentation and community support.
+Had to rely on unofficial blogs, GitHub issues, and AI tools for working examples and usage patterns.
+
+2. SQL Execution Errors During Integration
+
+Encountered a runtime error: query.execute is not a function, caused by improper usage of the query interface.
+Resolved the issue after investigating the PgLite API structure and referring to Stack Overflow and GitHub discussions.
+
+3. Responsive Design Across Devices
+
+Ensuring consistent UI/UX across mobile and desktop screens required extra effort.
+Used Tailwind CSS responsive utilities (sm:, md:, lg:) and Flexbox/Grid layouts to manage design behavior across breakpoints effectively.
+
+4. Deployment-Related Crashes
+
+Initial deployment attempts led to application crashes, likely due to build-time discrepancies, WebAssembly loading issues, or improper environment detection.
+
+Resolved the issue by configuring Vite properly for WASM support and adding runtime checks to ensure browser compatibility with WebAssembly and PgLite. 
