@@ -8,10 +8,15 @@ A frontend-only patient registration application using React and client-side dat
 ## Features
 
  Patient registration with form validation
+ 
  Patient data viewing and filtering
+ 
  SQL query execution against patient data
+ 
  Persistent data storage using localStorage
- Cross-tab synchronization for real-time data updates
+ 
+ -tab synchronization for real-time data updates
+ 
  Data export functionality
 
 ## Technology Stack
